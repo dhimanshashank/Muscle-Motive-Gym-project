@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,9 +20,9 @@ const Hero = () => {
 
           {/* Right Section - Buttons */}
           <div className="mt-8 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end space-x-4 pt-32 pr-16">
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition duration-300 signika-negative">
+            <Link to={"/login"} className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition duration-300 signika-negative">
               Be a Member
-            </button>
+            </Link>
             <button className="border-2 border-orange-500 text-orange-500 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white transition duration-300 signika-negative hover:border-white">
               <span className="mr-2">▶</span> Learn More
             </button>
